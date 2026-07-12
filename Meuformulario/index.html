@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Dados Pessoais</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="pagina">
+    <form class="formulario" id="formulario-consorcio">
+      <h1>Documentação necessária</h1>
+
+      <p class="subtitulo">
+        Para iniciarmos seu projeto de consórcio, preencha os dados abaixo.
+      </p>
+
+      <h2>Dados pessoais</h2>
+
+      <div class="campo">
+        <label for="nome">Nome completo</label>
+        <input type="text" id="nome" name="nome" required>
+      </div>
+
+      <div class="campo">
+        <label for="nascimento">Data de nascimento</label>
+        <input type="date" id="nascimento" name="nascimento" required>
+      </div>
+
+      <div class="campo">
+        <label for="cpf">CPF</label>
+        <input type="text" id="cpf" name="cpf" required>
+      </div>
+
+      <div class="campo">
+        <label for="mae">Nome da mãe</label>
+        <input type="text" id="mae" name="mae" required>
+      </div>
+
+      <div class="campo">
+        <label for="estado-civil">Estado civil</label>
+        <select id="estado-civil" name="estado-civil" required>
+          <option value="" selected disabled>Selecione uma opção</option>
+          <option value="solteiro">Solteiro(a)</option>
+          <option value="casado">Casado(a)</option>
+          <option value="divorciado">Divorciado(a)</option>
+          <option value="viuvo">Viúvo(a)</option>
+          <option value="uniao-estavel">União estável</option>
+        </select>
+      </div>
+
+      <h2>Endereço residencial</h2>
+
+      <div class="campo">
+        <label for="endereco">Endereço completo</label>
+        <input type="text" id="endereco" name="endereco"
+          placeholder="Rua, número e complemento" required>
+      </div>
+
+      <div class="campo">
+        <label for="bairro">Bairro</label>
+        <input type="text" id="bairro" name="bairro" required>
+      </div>
+
+      <div class="campo">
+        <label for="cep">CEP</label>
+        <input type="text" id="cep" name="cep" required>
+      </div>
+
+      <h2>Informações profissionais</h2>
+
+      <div class="campo">
+        <label for="cargo">Cargo atual</label>
+        <input type="text" id="cargo" name="cargo" required>
+      </div>
+
+      <div class="campo">
+        <label for="renda">Renda aproximada</label>
+        <input type="number" id="renda" name="renda" min="0"
+          placeholder="Ex.: 5000" required>
+      </div>
+
+      <h2>Contato</h2>
+
+      <div class="campo">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="campo">
+        <label for="telefone">Telefone</label>
+        <input type="tel" id="telefone" name="telefone" required>
+      </div>
+
+      <button class="botao-enviar" type="submit">ENVIAR DADOS</button>
+    </form>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
