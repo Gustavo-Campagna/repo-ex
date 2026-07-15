@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulação de Consórcio</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="pagina">
+    <form class="formulario" id="formulario-consorcio">
+      <h1>Solicite sua simulação</h1>
+
+      <p class="subtitulo">
+        Preencha os dados abaixo para encontrarmos a melhor opção para você.
+      </p>
+
+      <h2>Seus dados</h2>
+
+      <div class="campo">
+        <label for="nome">Nome completo</label>
+        <input type="text" id="nome" name="nome" required>
+      </div>
+
+      <div class="campo">
+        <label for="whatsapp">WhatsApp</label>
+        <input type="tel" id="whatsapp" name="whatsapp"
+          placeholder="(00) 00000-0000" required>
+      </div>
+
+      <div class="campo">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="campo">
+        <label for="cidade">Cidade</label>
+        <input type="text" id="cidade" name="cidade" required>
+      </div>
+
+      <h2>Sobre seu consórcio</h2>
+
+      <div class="campo">
+        <label for="objetivo">1. Qual é o seu objetivo ao considerar um consórcio?</label>
+        <select id="objetivo" name="objetivo" required>
+          <option value="" selected disabled>Selecione uma opção</option>
+          <option value="Investimento e rentabilidade">Investimento e rentabilidade</option>
+          <option value="Comprar um imóvel">Comprar um imóvel</option>
+          <option value="Comprar um veículo">Comprar um veículo</option>
+          <option value="Planejamento financeiro">Planejamento financeiro</option>
+          <option value="Outro">Outro</option>
+        </select>
+      </div>
+
+      <div class="campo">
+        <label for="experiencia">2. Você já teve alguma experiência anterior com consórcio?</label>
+        <select id="experiencia" name="experiencia" required>
+          <option value="" selected disabled>Selecione uma opção</option>
+          <option value="Sim, já participei de um consórcio">Sim, já participei de um consórcio</option>
+          <option value="Não, é a minha primeira vez">Não, é a minha primeira vez</option>
+        </select>
+      </div>
+
+      <div class="campo">
+        <label for="valor">3. Qual o valor aproximado do bem que deseja adquirir?</label>
+        <input type="number" id="valor" name="valor"
+          min="0" placeholder="Ex.: 100000" required>
+      </div>
+
+      <button class="botao-enviar" type="submit">ENVIAR SOLICITAÇÃO</button>
+    </form>
+  </main>
+
+    <script src="java.js"></script>
+</body>
+</html>
